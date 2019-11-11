@@ -1,0 +1,4 @@
+$(".nav-link").click(function() {
+    var link = this.attribute("href");
+    alert(link);
+});

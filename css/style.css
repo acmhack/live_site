@@ -1,0 +1,27 @@
+body {
+    background-color: rgb(101, 229, 140);
+}
+
+#content-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+#content-wrapper section {
+    position: absolute;
+    width: 100%;
+}
+
+#content-wrapper .active {
+    opacity: 1;
+}
+
+#content-wrapper section:not(.active) {
+    opacity: 0;
+}
+
+.container section {
+    text-align: center;
+    transition: all 0.3s linear;
+}
